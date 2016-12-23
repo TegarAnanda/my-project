@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('base');
-});
+Route::get('/', 'CHomePage@index');
