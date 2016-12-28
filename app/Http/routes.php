@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/', 'CHomePage@index');
+Route::get('/', 'CHomePage@home');
