@@ -23,4 +23,17 @@ class CHomePage extends Controller
             'data' => $response2->value
         ]);
     }
+
+    public function getByCategory($id)
+    {
+        $client = new Client([
+            'base_uri' => env('BASE_API_URL')
+        ]);
+        $response = $client->request('GET', 'thread/relatedByCategory/'.$id);
+        $response2 = json_decode($response->getBody());
+//        dd($response2->value);
+        return view ('pages.index-byCategory', [
+            'data' => $response2->value
+        ]);
+    }
 }

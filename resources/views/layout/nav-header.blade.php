@@ -6,21 +6,18 @@
                 <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a></div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav custom_nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mobile</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Android</a></li>
-                            <li><a href="#">Samsung</a></li>
-                            <li><a href="#">Nokia</a></li>
-                            <li><a href="#">Walton Mobile</a></li>
-                            <li><a href="#">Sympony</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Laptops</a></li>
-                    <li><a href="#">Tablets</a></li>
-                    <li><a href="pages/contact.html">Contact Us</a></li>
-                    <li><a href="pages/404.html">404 Page</a></li>
+                    <li class="active"><a href="{{ url('/') }}">Home</a></li>
+                    <li><a href="{{ url('/category/1') }}">General</a></li>
+                    {{--<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mobile</a>--}}
+                        {{--<ul class="dropdown-menu" role="menu">--}}
+                            {{--<li><a href="#">Android</a></li>--}}
+                            {{--<li><a href="#">Samsung</a></li>--}}
+                            {{--<li><a href="#">Nokia</a></li>--}}
+                            {{--<li><a href="#">Walton Mobile</a></li>--}}
+                            {{--<li><a href="#">Sympony</a></li>--}}
+                        {{--</ul>--}}
+                    {{--</li>--}}
+                    <li><a href="/category/2">Technology</a></li>
                 </ul>
             </div>
             <div class="search"><a class="search_icon" href="#"><i class="fa fa-search"></i></a>

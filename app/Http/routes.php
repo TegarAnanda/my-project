@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'CHomePage@home');
+Route::get('/category/{id}', 'CHomePage@getByCategory');
